@@ -55,8 +55,10 @@ public class FacebookLogin extends PageObject {
 	@FindBy(xpath="//button[@name='websubmit']")
 	WebElement Signup;
 	
-	@FindBy(xpath="//div[@role='alert']")
+	@FindBy(xpath="//div[@id='email_container']/child::div[2]")
 	public WebElement fbLoginalert;
+
+	//(xpath="//div[@role='alert']")
 	
 	@FindBy(xpath="//input[@id='email']")
 	WebElement loginemail;
@@ -64,8 +66,10 @@ public class FacebookLogin extends PageObject {
 	@FindBy(xpath="//input[@id='pass']")
 	WebElement loginpassword;
 	
-	@FindBy(xpath="//label[@id='loginbutton']")
+	@FindBy(xpath="//div/button[@name='login']")
 	WebElement loginbutton;
+			//(xpath="//label[@id='loginbutton']")
+
 	
 	@FindBy(xpath="//div/h2[@class='uiHeaderTitle' and text()='Enter the code from your email']")
 	WebElement otptriggermsg;
